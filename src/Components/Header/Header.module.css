@@ -1,0 +1,91 @@
+.header {
+  background-color: #fff;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  padding: 15px 20px 15px 15px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+.navLogo {
+  flex-grow: 1;
+}
+.avtarContainer {
+  display: flex;
+  align-items: center;
+}
+.avatar {
+  width: 40px;
+  border-radius: 50%;
+  margin: 0 15px 0 5px;
+}
+.dateTime {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  color: #6a6a6c;
+}
+.userName {
+  font-size: 24px;
+  font-weight: 500;
+}
+.smalltext {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 8px;
+  color: #b6b6b8;
+}
+
+.searchForm {
+  margin: 0 10px;
+}
+.searchInput {
+  flex-shrink: 1;
+  border: none;
+  color: #1f1437;
+  background-color: #f2f4f8;
+  padding: 15px 15px 15px 40px;
+  border-radius: 6px;
+  width: 270px;
+  outline: none;
+  background: #f2f4f8
+    url("data:image/svg+xml,%3Csvg style='color: white' xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z' fill='black'%3E%3C/path%3E%3C/svg%3E")
+    no-repeat 13px center;
+}
+
+.logout {
+  margin: 0 15px;
+  cursor: pointer;
+  
+}
+.smMenu {
+  display: none;
+  cursor: pointer;
+}
+
+/* md */
+@media (max-width: 768px) {
+  .smalltext {
+    font-size: 16px;
+  }
+  .userName {
+    font-size: 20px;
+  }
+  .logout {
+    display: none;
+  }
+  .smMenu {
+    display: block;
+  }
+}
+/* sm */
+@media (max-width: 640px) {
+  .smalltext {
+    font-size: 14px;
+  }
+  .userName {
+    font-size: 17px;
+  }
+}

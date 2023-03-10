@@ -1,0 +1,95 @@
+
+
+.imageContainer{
+    position: relative;
+}
+.cardImage{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.authorDetails{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 94%;
+    height: 0.7rem;
+    margin-bottom: 0.5rem;
+}
+.authorDetails>img{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+.authorDetails>p{
+    width: 100%;
+  height: 0.7rem;
+  margin-bottom: 0.5rem;
+}
+.authorDetails>p>span{
+    width: 100%;
+  height: 0.7rem;
+  margin-bottom: 0.5rem;
+    display: block;
+}
+.tag{
+  height: 0.7rem;
+  margin-bottom: 0.5rem;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.title{
+    width: 100%;
+  height: 0.7rem;
+  margin-bottom: 0.5rem;
+  visibility: hidden;
+}
+.excerpt{
+    width: 100%;
+  height: 0.7rem;
+  margin-bottom: 0.5rem;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.readMore{
+    width: 100%;
+  height: 0.7rem;
+  margin-bottom: 0.5rem;
+    display: inline-block;
+}
+.parselytagsContainer{
+    position: absolute;
+    bottom: 5px;
+    display: none;
+}
+.parselytags{
+    font-size: 14px;
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 5px;
+    margin: 2px 5px;
+    display: inline-block;
+}
+.imageContainer:hover .parselytagsContainer{
+    display: block;
+}
+.imageContainer:hover .authorDetails{
+    display: none;
+}
+
+.skeleton {
+    animation: skeleton-loading 1s linear infinite alternate;
+  }
+
+  @keyframes skeleton-loading {
+    0% {
+      background-color: hsl(201, 51%, 91%);
+    }
+    100% {
+      background-color: hsl(0, 0%, 100%);
+    }
+  }
